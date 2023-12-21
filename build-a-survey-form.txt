@@ -1,0 +1,132 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill the survey form with your details </p>
+<fieldset>
+<div class="details">
+<form id="survey-form">
+  <label id="name-label">Full name <input id="name" type="text" required placeholder="Enter your name"></label>
+  <label id="email-label">Email <input Email type="email" id="email" required placeholder="Enter your email"></input></label>
+  <label id="number-label">Age(optional) <input type="number"id="number" pattern="[0-9]+" min="1" max="10" placeholder="age"></input ></label>
+<fieldset>
+    
+    <legend>Gender</legend>
+    <label for="gender">
+      <input type="radio" class="inline" id="gender" name="Female-male" value="g1">Female</input>
+      <input class="inline" id="gender" name="Female-male" type="radio" value="g2">Male</input>
+      </label>
+</fieldset>
+<fieldset>
+  <label>Which option best describes your current role?<select id="dropdown">
+    <option value="">(Select One)</option>
+    <option value="1">Python Developer</option>
+    <option value="2">Frontend Devevloper
+    </option>
+    <option value="3">Backend Developer</option>
+    <option value="4">App Developer</option>
+    <option value="5">Tester</option>
+    <option value="6">UI/UX Developer</option>
+    <option value="6">Software Engineer</option>
+    </select>
+    </label>
+</fieldset>
+
+    <fieldset>
+    <label> Technologies Known:
+      <input class="inline" type="checkbox" value="c1">Python</input>
+      <input class="inline"  value="c2" type="checkbox">Flutter</input>
+      <input class="inline"  value="c3" type="checkbox">Django/Flask</input>
+      <input class="inline"  value="c4"  value="" type="checkbox">UI/UX</input>
+      <input class="inline"  value="c5"  value="" type="checkbox">HTML</input>
+      <input class="inline"  value="c6"  value="" type="checkbox">CSS</input>
+      <input class="inline"  value="c7" type="checkbox">JS</input>
+      <input class="inline"  value="c8" type="checkbox">C/C++</input>
+      <input class="inline"  value="c9" type="checkbox">Testing</input>
+    </label>
+    </fieldset>
+    <lable for="bio">Brief description bout your projects<textarea d="bio"rows="10" cols="40"placeholder="Your description here"></textarea></label>
+    <label><input id="submit"type="submit"></input></label>
+
+
+</form>
+</div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-image: url(https://shots.codepen.io/leen624/pen/mdLjbbz-512.jpg?version=1664907060);
+  font-family: Tahoma;
+  color:white;
+  margin-left:0;
+  margin-right:0;
+  justify-content:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+h1, p {
+  text-align: center;
+}
+form{
+  width:100%;
+  font-size:18px;
+  padding-bottom: 2em;
+}
+#survey-form{
+  background-color:rgb(10, 10, 70,0.7);
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius:5px;
+}
+label {
+  display: block;
+  margin-bottom:2em;
+}
+fieldset{
+  border:none;
+  margin-bottom:0.5em;
+}
+input,textarea{
+  background-color:white;
+  border: 1px solid #0a0a23;
+  color: black;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 3em;
+  border-radius:0.4em;
+}
+input[type="submit"]{
+  height:2.5em;
+  font-size:18px;
+  margin-top:2em;
+
+}
+.inline{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+.inline{
+  display:inline;
+}
+
+** end of undefined **
+
